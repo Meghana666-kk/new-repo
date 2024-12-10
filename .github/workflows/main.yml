@@ -23,7 +23,7 @@ jobs:
     - name: Configure
       run: |
         cd new_project
-        ./configure
+        ./main
         
     - name: Build
       run: |
