@@ -7,10 +7,9 @@ on:
     branches: [ "main", "project" ]
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v4
       with:
@@ -20,15 +19,15 @@ jobs:
       run: |
         git checkout project
         
-    - name: Configure
-      run: |
-        cd new_project
-        ./main
-        
     - name: Build
       run: |
         cd new_project
         make
+        
+    - name: Run Main
+      run: |
+        cd new_project
+        ./main
         
     - name: Test
       run: |
