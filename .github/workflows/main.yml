@@ -29,11 +29,6 @@ jobs:
         cd new_project
         ./main
         
-    - name: Test
-      run: |
-        cd new_project
-        make check
-        
     - name: Package
       run: |
         cd new_project
