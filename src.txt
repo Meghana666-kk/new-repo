@@ -1,5 +1,2 @@
 Hello, I'm Meghana
-<<<<<<< HEAD
 I'm from India
-=======
->>>>>>> 9084eef... Feat : Add new txt file
