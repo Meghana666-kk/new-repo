@@ -1,2 +1,12 @@
 Hello, I'm Meghana
+<<<<<<< HEAD
 I'm from INDIA
+=======
+<<<<<<< HEAD
+
+I'm from India
+
+=======
+I'm from India
+>>>>>>> Fix : Added new line
+>>>>>>> 1c97c36a2f27c8e783e8d8635306d661b5834af7
