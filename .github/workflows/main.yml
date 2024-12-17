@@ -1,0 +1,31 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main", "project" ]
+  pull_request:
+    branches: [ "main", "project" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Checkout project branch
+      run: |
+        git checkout project
+        
+    - name: Build
+      run: |
+        cd new_project
+        make
+        
+    - name: Run Main
+      run: |
+        cd new_project
+        ./main
+        
